@@ -1,0 +1,12 @@
+body{
+  background-color: #222;
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  background: #222;
+  color: #DDD;
+  padding: 10px;
+  border-radius: 3px;
+}
