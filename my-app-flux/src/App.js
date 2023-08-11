@@ -181,35 +181,35 @@ function App() {
     // areaSeries.update({ time: "2019-01-01", value: 10 });
     // areaSeries.update({ time: "2019-01-02", value: 20 });
 
-    setInterval(() => {
-      // Get the last item in the array
-      // Get the last item in the array
-      let lastItem = initialData[initialData.length - 1];
+    // setInterval(() => {
+    //   // Get the last item in the array
+    //   // Get the last item in the array
+    //   let lastItem = initialData[initialData.length - 1];
 
-      // Extract date components
-      let { year, month, day } = lastItem.time;
+    //   // Extract date components
+    //   let { year, month, day } = lastItem.time;
 
-      // Create a new date object from the last item's time and increment the day by 1
-      let newDate = new Date(year, month - 1, day);
-      newDate.setDate(newDate.getDate() + 1);
+    //   // Create a new date object from the last item's time and increment the day by 1
+    //   let newDate = new Date(year, month - 1, day);
+    //   newDate.setDate(newDate.getDate() + 1);
 
-      // Create a new object for time
-      let newTime = {
-        year: newDate.getFullYear(),
-        month: newDate.getMonth() + 1,
-        day: newDate.getDate(),
-      };
+    //   // Create a new object for time
+    //   let newTime = {
+    //     year: newDate.getFullYear(),
+    //     month: newDate.getMonth() + 1,
+    //     day: newDate.getDate(),
+    //   };
 
-      // Generate a random value between 20 and 35
-      let randomValue = Math.random() * (35 - 20) + 20;
+    //   // Generate a random value between 20 and 35
+    //   let randomValue = Math.random() * (35 - 20) + 20;
 
-      // Add the new object to the array
-      initialData.push({ time: newTime, value: randomValue });
+    //   // Add the new object to the array
+    //   initialData.push({ time: newTime, value: randomValue });
 
-      console.log("newTime", newTime);
+    //   console.log("newTime", newTime);
 
-      areaSeries.setData(initialData);
-    }, 1000);
+    //   areaSeries.setData(initialData);
+    // }, 1000);
 
     // initialData.push(newPlot);
     //   console.log("newPlot", newPlot);
